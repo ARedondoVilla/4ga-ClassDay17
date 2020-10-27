@@ -1,1 +1,9 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+#button-info {
+    width: 150px;
+}
+
+.card {
+    width: 300px;
+}

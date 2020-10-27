@@ -18,18 +18,20 @@ export default function(props) {
 
     return (
         <div className="container">
-            <h1>Planets</h1>
-            {store.planets.map((planet, index) => 
-                <Card key={index} name={planet.name} resource="planets" id={index}>
-                    <p>Population: {planet.population}</p>
-                    <p>Terrain: {planet.terrain}</p>
-                </Card>
-            )}
+            
             <h1>Characters</h1>
             {store.people.map((person, index) => 
                 <Card key={index} name={person.name} resource="people" id={index}>
                     <p>Hair Color: {person.hair_color}</p>
                     <p>Eye-Color: {person.eye_color}</p>
+                </Card>
+            )}
+
+            <h1>Planets</h1>
+            {store.planets.map((planet, index) => 
+                <Card key={index} name={planet.name} resource="planets" id={index}>
+                    <p className="card-text">Population: {planet.population}</p>
+                    <p className="card-text">Terrain: {planet.terrain}</p>
                 </Card>
             )}
           

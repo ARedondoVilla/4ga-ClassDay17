@@ -7,7 +7,7 @@ export default function(props) {
     const params = useParams()
     const { store, actions } = useContext(Context);
 
-    let person = store.people[params.index]
+    let person = store.people[params.index] // PARA DETERMINAR EL ID DE CADA PERSONAJE SEGUN EL ARRAY
     console.log(person);
     
 

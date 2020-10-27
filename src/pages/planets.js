@@ -7,7 +7,7 @@ export default function(props) {
     return (
         <div className="container">
             <div className="jumbotron">
-                <h1>User {params.id} page</h1>
+                <h1>Planet: {params.index}</h1>
             </div>
         </div>
     )

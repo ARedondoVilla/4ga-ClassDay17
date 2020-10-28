@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function(props) {
     return (
-        <nav className="navbar navbar-light bg-white container">
+        <nav className="navbar navbar-light bg-white container mb-3">
             <a className="navbar-brand" href="#">
                 <img src="https://static-mh.content.disney.io/starwars/assets/navigation/sw_logo_stacked-336c62367939.png"/>
             </a>

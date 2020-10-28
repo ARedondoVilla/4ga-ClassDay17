@@ -14,8 +14,6 @@ export default function(props) {
     }, [])
 
     console.log(store.planets);
-   
-    
 
     return (
         <div className="container">

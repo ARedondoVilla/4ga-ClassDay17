@@ -6,6 +6,7 @@
 
 .navbar-brand img {
     width: 150px;
+    
 }
 
 #button-info {
@@ -16,8 +17,12 @@
     width: 400px;
 }
 
+#card-more {
+    max-width: 540px;
+}
+
 .scroll-horizontal {
-    padding: 10px;
+    padding: 10px 0;
     display: flex;
     width: 100%;
     height: auto;

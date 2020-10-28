@@ -1,9 +1,27 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+.navbar-brand {
+    background-color: black;
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
 #button-info {
     width: 150px;
 }
 
 .card {
     width: 300px;
+}
+
+.scroll-horizontal {
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    height: auto;
+	overflow-x: auto;
+	white-space: nowrap;
+    margin: 25px 0;
 }

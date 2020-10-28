@@ -20,20 +20,24 @@ export default function(props) {
         <div className="container">
             
             <h1>Characters</h1>
-            {store.people.map((person, index) => 
-                <Card key={index} name={person.name} resource="people" id={index}>
-                    <p>Hair Color: {person.hair_color}</p>
-                    <p>Eye-Color: {person.eye_color}</p>
-                </Card>
-            )}
+            <div className="scroll-horizontal">
+                {store.people.map((person, index) => 
+                    <Card key={index} name={person.name} resource="people" id={index}>
+                        <p>Hair Color: {person.hair_color}</p>
+                        <p>Eye-Color: {person.eye_color}</p>
+                    </Card>
+                )}
+            </div>
 
             <h1>Planets</h1>
-            {store.planets.map((planet, index) => 
-                <Card key={index} name={planet.name} resource="planets" id={index}>
-                    <p className="card-text">Population: {planet.population}</p>
-                    <p className="card-text">Terrain: {planet.terrain}</p>
-                </Card>
-            )}
+            <div className="scroll-horizontal">
+                {store.planets.map((planet, index) => 
+                    <Card key={index} name={planet.name} resource="planets" id={index}>
+                        <p className="card-text">Population: {planet.population}</p>
+                        <p className="card-text">Terrain: {planet.terrain}</p>
+                    </Card>
+                )}
+            </div>
           
         </div>
     )

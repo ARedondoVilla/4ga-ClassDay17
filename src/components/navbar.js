@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 export default function(props) {
     return (
-        <nav className="navbar">
-            <div className="container">
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/contact">Contact</Link>
-                <Link to="/users/1">Usuario 1</Link>
-                <Link to="/users/2">Usuario 2</Link>
-            </div>
+        <nav className="navbar navbar-light bg-white container">
+            <a className="navbar-brand" href="#">
+                <img src="https://static-mh.content.disney.io/starwars/assets/navigation/sw_logo_stacked-336c62367939.png"/>
+            </a>
+            <form className="form-inline">
+                <button className="btn btn-outline-success" type="button">Main button</button>
+            </form>
+        
         </nav>
     )
 }

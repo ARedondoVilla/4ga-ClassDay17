@@ -10,7 +10,9 @@ export default function(props) {
             </a>
             <form className="form-inline">
                 <button className="btn btn-outline-success" type="button">Main button</button>
+                
             </form>
+            {/* CREAR UN NUEVO COMPONENTE QUE SUSTITUYA AL BOTON MAIN BUTTON QUE ALMACENE LOS ELEMENTOS CON isFav = true*/ }
             </div>
         
         </nav>

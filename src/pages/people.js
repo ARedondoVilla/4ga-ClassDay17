@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import { Context } from "../store/index.js";
@@ -6,6 +6,11 @@ import { Context } from "../store/index.js";
 export default function(props) {
     const params = useParams()
     const { store, actions } = useContext(Context);
+
+    useEffect(() => {
+        console.log(params);
+        
+    }, [])
 
     let person = store.people[params.index] // PARA DETERMINAR EL ID DE CADA PERSONAJE SEGUN EL ARRAY
     console.log(person);

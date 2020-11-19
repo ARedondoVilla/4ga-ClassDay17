@@ -3,7 +3,8 @@ export default function({ getStore, getActions, setStore }) {
         store: {
             loading: false,
             planets : [],
-            people: []
+            people: [],
+            favorites: ["hola", "Alejandro"]
         },
         actions: {
             setLoading(status) {

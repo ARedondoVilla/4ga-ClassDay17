@@ -4,7 +4,7 @@ export default function({ getStore, getActions, setStore }) {
             loading: false,
             planets : [],
             people: [],
-            favorites: ["hola", "Alejandro"]
+            favorites: []
         },
         actions: {
             setLoading(status) {
@@ -49,7 +49,12 @@ export default function({ getStore, getActions, setStore }) {
                     console.log(json.results);
                     })
                 }
-               
+            },
+            addList(item) {
+                const store = getStore()
+                store.favorites.push(item)
+                console.log(store.favorites);
+                setStore() 
             }
         }
     }

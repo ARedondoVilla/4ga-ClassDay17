@@ -52,10 +52,18 @@ export default function({ getStore, getActions, setStore }) {
             },
             addList(item) {
                 const store = getStore()
-                store.favorites.push(item)
+                if (store.favorites.includes(item) == true) {
+                    let newList = store.favorites.filter((element, index) => {
+                        return(element != item)
+                    })
+                    setStore({favorites: newList})
+                } else {
+                    store.favorites.push(item)
+                }
                 console.log(store.favorites);
                 setStore() 
             }
+            
         }
     }
 }

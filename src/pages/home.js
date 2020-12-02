@@ -13,10 +13,7 @@ export default function(props) {
         actions.getPeople()
         console.log("Fav: ", store.favorites);
     }, [])
-
     
-    
-
     return (
         <div className="container">
             

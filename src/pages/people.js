@@ -18,23 +18,21 @@ export default function(props) {
 
     return (
         <div className="container">
-            <div className="jumbotron">
-                <h1>Person: {person.name}</h1>
-            </div>
-            <div className="card mb-3" id="card-more">
-                <div className="row no-gutters">
-                    <div className="col-md-4">
-                        <img src="https://picsum.photos/800/600" className="card-img" alt="..."/>
-                     </div>
+            
+            
+            <div className="row">
+                <div className="col-6">
+                    <img src="https://picsum.photos/500/250">
+                    </img>
                 </div>
-                <div className="col-md-8">
-                    <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                         <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
+                <div className="col-6">
+                    <h1>{person.name}</h1>
+                    <p>
+                        Lorem fistrum ese que llega no puedor la caidita te voy a borrar el cerito al ataquerl pupita qué dise usteer diodeno quietooor. A gramenawer de la pradera a gramenawer no puedor no puedor a wan. Hasta luego Lucas a peich a wan tiene musho peligro torpedo jarl caballo blanco caballo negroorl a peich de la pradera no te digo trigo por no llamarte Rodrigor.
+                    </p> 
                 </div>
-            </div>
+            
+            </div> 
         </div>
     )
 }

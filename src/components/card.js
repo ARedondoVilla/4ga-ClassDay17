@@ -23,8 +23,14 @@ export default function(props) {
                 <div className="card-body">
                     <h5 className="card-title">Nombre: {props.name}</h5>
                     {props.children}
-                    <Link to={path} className="btn btn-primary" id="button-info">Learn More!</Link>
-                    <button type="button" onClick={event => actions.addList(props.name)}>FAV</button>
+                    <div className="row justify-content-between">
+                        <div className="col-6">
+                            <Link to={path} className="btn btn-primary" id="button-info">Learn More!</Link>
+                        </div>
+                        <div className="col-6">
+                            <button type="button" class="btn btn-warning" onClick={event => actions.addList(props.name)}>Add to Favorites</button>
+                        </div>
+                    </div>
                 </div>
                 
             </div>

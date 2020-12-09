@@ -11,8 +11,12 @@ export default function(props) {
     useEffect(() => {
         actions.getPlanets()
         actions.getPeople()
-        console.log("Fav: ", store.favorites);
+        // console.log("Fav: ", store.favorites);
     }, [])
+
+    useEffect(() => {
+        console.log("Fav: ", store.favorites);
+    }, [store.favorites])
     
     return (
         <div className="container">

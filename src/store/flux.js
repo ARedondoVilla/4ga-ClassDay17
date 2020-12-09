@@ -62,6 +62,10 @@ export default function({ getStore, getActions, setStore }) {
                 }
                 console.log(store.favorites);
                 setStore() 
+            },
+            getListFavorites() {
+                const store = getStore()
+                return setStore()
             }
             
         }

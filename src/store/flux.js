@@ -4,7 +4,7 @@ export default function({ getStore, getActions, setStore }) {
             loading: false,
             planets : [],
             people: [],
-            favorites: []
+            favorites: ["elemento 1", "elemento 2"]
         },
         actions: {
             setLoading(status) {
@@ -59,13 +59,15 @@ export default function({ getStore, getActions, setStore }) {
                     setStore({favorites: newList})
                 } else {
                     store.favorites.push(item)
+                    setStore()
                 }
                 console.log(store.favorites);
-                setStore() 
+                 
             },
             getListFavorites() {
                 const store = getStore()
-                return setStore()
+                setStore({favorites: store.favorites})
+                console.log("fav:", store.favorites);
             }
             
         }

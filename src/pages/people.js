@@ -33,8 +33,8 @@ export default function(props) {
             <div className="dropdown-divider"></div>
             <div className="row">
                 <div className="col-2 text-center">
-                    <h5>Name</h5>
-                    <h5>{person.name}</h5>
+                    <strong><h5>Name</h5></strong>
+                    <h6>{person.name}</h6>
                 </div>
                 <div className="col-2 text-center">
                     <h5>Birth Year</h5>

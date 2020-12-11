@@ -4,7 +4,7 @@ export default function({ getStore, getActions, setStore }) {
             loading: false,
             planets : [],
             people: [],
-            favorites: ["elemento 1", "elemento 2"]
+            favorites: []
         },
         actions: {
             setLoading(status) {
@@ -63,8 +63,15 @@ export default function({ getStore, getActions, setStore }) {
                     setStore()
                 }
                 console.log(store.favorites);
-                 
             },    
+            deleteList(item) {
+                const store = getStore()
+                let newList = store.favorites.filter((element, index) => {
+                        return(element != item)
+                })
+                setStore({favorites: newList})
+                console.log(store.favorites);
+            }
         }
     }
 }

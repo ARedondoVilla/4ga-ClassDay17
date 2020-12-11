@@ -17,6 +17,23 @@ export default function(props) {
                 <a className="navbar-brand" href="#">
                     <img src="https://static-mh.content.disney.io/starwars/assets/navigation/sw_logo_stacked-336c62367939.png"/>
                 </a>
+                <div class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Favorites
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        {store.favorites.map((value, index) => {
+                            return (
+                                <a key={index} class="dropdown-item" href="#">
+                                    {value}
+                                    <button onClick={(event) => actions.deleteList(value)} type="button" className="close" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </a>
+                            )
+                        })}
+                    </div>
+                </div>
             </div>
         </nav>
     )

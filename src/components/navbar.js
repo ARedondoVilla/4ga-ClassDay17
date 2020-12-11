@@ -2,7 +2,7 @@ import React, {useContext, useEffect} from "react";
 import { Link } from "react-router-dom";
 
 import { Context } from "../store/index.js";
-import DropdownFavorites from "../components/dropdownFavorites.js"
+
 
 export default function(props) {
     const { store, actions } = useContext(Context);
@@ -17,7 +17,6 @@ export default function(props) {
                 <a className="navbar-brand" href="#">
                     <img src="https://static-mh.content.disney.io/starwars/assets/navigation/sw_logo_stacked-336c62367939.png"/>
                 </a>
-                <DropdownFavorites/>
             </div>
         </nav>
     )

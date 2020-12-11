@@ -14,9 +14,7 @@ export default function(props) {
         // console.log("Fav: ", store.favorites);
     }, [])
 
-    useEffect(() => {
-        actions.getListFavorites()
-    }, [store.favorites])
+
     
     return (
         <div className="container">

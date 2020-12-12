@@ -31,6 +31,14 @@
     margin: 25px 0;
 }
 
+.divider-pink {
+    margin: 15px 0px;
+    background-color: #EF3C5D;
+    height: 2px;
+    width: auto;
+}
+
 .pink-text {
     color: #EF3C5D;
 }
+

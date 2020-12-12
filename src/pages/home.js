@@ -14,15 +14,7 @@ export default function(props) {
         // console.log("Fav: ", store.favorites);
     }, [])
 
-    useEffect(() => {
-        console.log("se ejecuta");
-        
-        console.log(actions.buttonFavorites(2));
-        
-        
-    }, )
-
-    
+ 
     return (
         <div className="container">
             

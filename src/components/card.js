@@ -24,11 +24,14 @@ export default function(props) {
                     <h5 className="card-title">Nombre: {props.name}</h5>
                     {props.children}
                     <div className="row justify-content-between">
-                        <div className="col-6">
+                        <div className="col-4 text-left">
                             <Link to={path} className="btn btn-primary" id="button-info">Learn More!</Link>
                         </div>
-                        <div className="col-6">
-                            <button type="button" class="btn btn-warning" onClick={event => actions.addList(props.name)}>Add to Favorites</button>
+                        <div className="col-8 text-right">
+                            <button type="button" className="btn btn-warning" onClick={event => actions.addList(props.name)}>
+                                {store.favorites.includes(props.name) ? "Remove from Favorites" : "Add to Favorites"}
+
+                            </button>
                         </div>
                     </div>
                 </div>

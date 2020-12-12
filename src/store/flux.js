@@ -72,10 +72,6 @@ export default function({ getStore, getActions, setStore }) {
                 })
                 setStore({favorites: newList})
                 console.log(store.favorites);
-            },
-            buttonFavorites(item) {
-                const store = getStore()
-                store.list.includes(item)
             }   
         }
     }

@@ -30,31 +30,32 @@ export default function(props) {
                     </p> 
                 </div>
             </div>
-            <div className="dropdown-divider pink-text"></div>
+            <div className="divider-pink"></div>
+            
             <div className="row">
                 <div className="col-2 text-center pink-text">
                     <strong><h5>Name</h5></strong>
-                    <h6>{person.name}</h6>
+                    <p>{person.name}</p>
                 </div>
                 <div className="col-2 text-center pink-text">
                     <h5>Birth Year</h5>
-                    <h5>{person.birth_year}</h5>
+                    <p>{person.birth_year}</p>
                 </div>
                 <div className="col-2 text-center pink-text">
                     <h5>Gender</h5>
-                    <h5>{person.gender}</h5>
+                    <p>{person.gender}</p>
                 </div>
                 <div className="col-2 text-center pink-text">
                     <h5>Height</h5>
-                    <h5>{person.height}</h5>
+                    <p>{person.height}</p>
                 </div>
                 <div className="col-2 text-center pink-text">
                     <h5>Skin Color</h5>
-                    <h5>{person.skin_color}</h5>
+                    <p>{person.skin_color}</p>
                 </div>
                 <div className="col-2 text-center pink-text">
                     <h5>Eye Color</h5>
-                    <h5>{person.eye_color}</h5>
+                    <p>{person.eye_color}</p>
                 </div>
             </div>
         </div>

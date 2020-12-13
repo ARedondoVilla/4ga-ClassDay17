@@ -9,11 +9,7 @@ import injectContext from "./store"
 
 import Footer from "./components/footer.js"
 import Navbar from "./components/navbar.js"
-
 import Home from "./pages/home.js"
-import About from "./pages/about.js"
-import Contact from "./pages/contact.js"
-
 import People from "./pages/people.js"
 import Planets from "./pages/planets.js"
 
@@ -38,7 +34,7 @@ export default injectContext(function(props) {
                 </Switch>
             </div>
 
-            <Footer />
+            
         </Router>
     )
 })

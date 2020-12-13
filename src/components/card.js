@@ -28,7 +28,7 @@ export default function(props) {
                             <Link to={path} className="btn btn-primary" id="button-info">Learn More!</Link>
                         </div>
                         <div className="col-8 text-right">
-                            <button type="button" className="btn btn-warning" onClick={event => actions.addList(props.name)}>
+                            <button type="button" className={store.favorites.includes(props.name) ? "btn btn-danger" : "btn btn-warning"} onClick={event => actions.addList(props.name)}>
                                 {store.favorites.includes(props.name) ? "Remove from Favorites" : "Add to Favorites"}
 
                             </button>

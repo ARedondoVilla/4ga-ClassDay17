@@ -7,9 +7,7 @@ export default function(props) {
     const params = useParams()
     const { store, actions } = useContext(Context);
 
-    let planet = store.planets[params.index] // PARA DETERMINAR EL ID DE CADA personajeAJE SEGUN EL ARRAY
-    console.log(planet);
-    
+    let planet = store.planets[params.index] 
 
     return (
          <div className="container">

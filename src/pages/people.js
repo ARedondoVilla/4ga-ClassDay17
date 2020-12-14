@@ -7,15 +7,8 @@ export default function(props) {
     const params = useParams()
     const { store, actions } = useContext(Context);
 
-    useEffect(() => {
-        console.log(params);
-        
-    }, [])
-
-    let person = store.people[params.index] // PARA DETERMINAR EL ID DE CADA PERSONAJE SEGUN EL ARRAY
-    console.log(person);
+    let person = store.people[params.index] 
     
-
     return (
         <div className="container">
             <div className="row height-body align-items-center">

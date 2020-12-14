@@ -13,7 +13,6 @@ export default function(props) {
         actions.getPeople()
     }, [])
 
- 
     return (
         <div className="container">
             

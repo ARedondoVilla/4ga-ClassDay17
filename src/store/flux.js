@@ -53,9 +53,12 @@ export default function({ getStore, getActions, setStore }) {
                     })
                     setStore({favorites: newList})
                 } else {
-                    store.favorites.push(item)
-                    setStore()
+                    const newList = [...store.favorites]
+                    newList.push(item)
+                    setStore({favorites: newList})
                 }
+                console.log(store.favorites);
+                
             },    
             deleteList(item) {
                 const store = getStore()
@@ -63,6 +66,7 @@ export default function({ getStore, getActions, setStore }) {
                         return(element != item)
                 })
                 setStore({favorites: newList})
+                console.log(store.favorites);
             }   
         }
     }

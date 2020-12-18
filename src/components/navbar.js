@@ -9,6 +9,8 @@ export default function(props) {
 
     useEffect(() => {
         // actions.getListFavorites()
+        console.log("ha cambiado");
+        
     }, [store.favorites])
 
     return (
